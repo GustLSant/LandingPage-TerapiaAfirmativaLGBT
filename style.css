@@ -7,8 +7,16 @@
     --var-color-01: #0D6364;
     --var-color-02: #084E4C;
     --var-color-03: #95D257;
+    --var-color-04: #01A9CD;
+    --var-color-05: #F4A062;
+    --var-color-06: #E8515D;
+    --var-color-07: #FFFFFF;
+    --var-color-08: #49BAB8;
+    --var-color-09: #96DAD9;
 
     --var-max-width: 1400px;
+
+    --sections-gap: 180px;
 
     --shadow-color-01: rgba(0,0,0,0.8);
     --shadow-color-02: rgba(0,0,0,0.5);
@@ -56,6 +64,11 @@ h2{
     text-align: center;
 }
 
+h3{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 
 /* 
 ########## ESTILOS DA SECTION 01 ############################################################
@@ -65,7 +78,7 @@ h2{
     position: relative;
     left: 0px;
     right: 0px;
-    background-image: url(images/ativo-agrupado-5.png), url(images/ativo-agrupado-canto.png);
+    background-image: url(images/ativo-agrupado-5.png), url(images/bloco-canto-bd.jpg);
     background-position: center left, bottom right;
     background-size: 15%, 20%;
     background-repeat: repeat-y, no-repeat;
@@ -73,9 +86,10 @@ h2{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 30px 0px;
     height: 100vh;
-    max-height: calc(100vh - 20px);
+    max-height: calc(100vh - 60px);
+    /* display: none; */
 }
 
 #section-01__logo-afirmativa{
@@ -126,8 +140,8 @@ h2{
 */
 
 #section-02{
-    padding-top: 150px;
-    background-image: url(images/ativo-agrupado-canto-invertido-jpg.jpg);
+    padding-top: var(--sections-gap);
+    background-image: url(images/bloco-canto-cd-cortado.jpg);
     background-position: top right;
     background-size: 20%;
     background-repeat: no-repeat;
@@ -145,25 +159,87 @@ h2{
 }
 
 
+/* 
+########## ESTILOS DA SECTION 03 ############################################################
+*/
+
+#section-03{
+    background: url(images/texturas/textura-fundo-02.png) no-repeat left center;
+    background-size: 30%;
+    padding-top: var(--sections-gap);
+    display: flex;
+    flex-direction: column;
+    gap: 80px
+}
+
+#section-03__grid{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+#section-03__grid > div{
+    background: url(images/texturas/textura-fundo-01.png) repeat center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+    border-radius: 60px;
+    color: white;
+    text-align: center;
+}
+
+#section-03__grid > div > p{
+    font-size: 1.2em;
+}
+
+#section-03__grid > div:nth-child(1){background-color: var(--var-color-01);}
+#section-03__grid > div:nth-child(2){background-color: var(--var-color-06);}
+#section-03__grid > div:nth-child(3){background-color: var(--var-color-05);}
+#section-03__grid > div:nth-child(4){background-color: var(--var-color-04);}
 
 
+/* 
+########## ESTILOS DA SECTION 04 ############################################################
+*/
 
+#section-04{
+    background-image: url(images/bloco-canto-ce.jpg), url(images/bloco-canto-be.jpg), url(images/bloco-canto-cd.jpg), url(images/bloco-canto-bd.jpg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom left, top right, bottom right;
+    background-size: 20%;
+    margin-top: var(--sections-gap);
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px
+}
 
+#section-04__grid{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap: 30px 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section-04__grid-item{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 40px;
+    color: black;
+    font-size: 1.3em;
+    text-align: center;
+    /* font-weight: bold; */
+}
+.section-04__grid-item > img{
+    border-radius: 40px;
+    border: 20px solid var(--var-color-02);
+}
 
 
 
