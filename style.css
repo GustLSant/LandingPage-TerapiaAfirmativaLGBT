@@ -18,6 +18,8 @@
 
     --sections-gap: 180px;
 
+    --transition-time: 0.1s;
+
     --shadow-color-01: rgba(0,0,0,0.8);
     --shadow-color-02: rgba(0,0,0,0.5);
     
@@ -38,7 +40,10 @@
     color: var(--var-color-05)
 }
 .highlight-03{
-    font-size: 1.5em;
+    font-size: 2.0em;
+}
+.highlight-04{
+    font-size: 3.0em;
 }
 
 .centralized-section{
@@ -54,6 +59,12 @@
     color: white;
     font-weight: bold;
     font-size: 1.25em;
+    transition: filter var(--transition-time), transform var(--transition-time);
+}
+.button-01:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .shaded-text{
@@ -287,27 +298,16 @@ h3{
     padding-top: 60px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px
 }
 
-.div_cards_conteudo{
+.div_cards_conteudo2{
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    justify-items: center;
+    gap: 50px;
 }
-
-.div_grow_flexbox{
-    display: flex;
-    flex: 2;
-}
-.div_grow_flexbox:nth-child(1){justify-content: flex-end;}
-.div_grow_flexbox:nth-child(2){
-    flex: 1;
-    justify-content: center;}
-.div_grow_flexbox:nth-child(3){justify-content: flex-start;}
-
-.div_cards_conteudo > div > div{
+.div_cards_conteudo2 > div{
     background: var(--var-color-02) url(images/texturas/textura-pequena-01.jpg) no-repeat center right;
     background-size: 50%;
     border-radius: 65px;
@@ -320,17 +320,10 @@ h3{
     font-weight: 600;
     text-align: center;
 }
-
-.div_cards_conteudo__card-40-horas > p:nth-child(1){
-    font-size: 3.0em;
-    line-height: 0.75em;
+.div_cards_conteudo2 > div:nth-child(1) > p:nth-child(1){
+    line-height: 1.0em;
     text-align: left;
 }
-.div_cards_conteudo__card-40-horas > p:nth-child(2){
-    font-size: 1.5em;
-    text-align: right;
-}
-
 
 #section-05__div_list{
     display: flex;
@@ -424,12 +417,12 @@ h3{
 */
 
 #section-comprar{
-    background: url(images/ativo-agrupado-5-horizontal-jpg.jpg) repeat-x center top;
+    background: url(images/ativo-agrupado-5-horizontal-jpg.jpg) repeat-x center top, url(images/ativo-agrupado-5-horizontal-jpg.jpg) repeat-x center bottom;
     background-size: 50%;
-    padding-top: var(--sections-gap);
+    padding: var(--sections-gap) 0px;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     gap: 40px;
 }
 
@@ -441,8 +434,110 @@ h3{
     font-weight: 600;
 }
 
-#section-comprar__div-preco > button{
-    font-size: 1.0em;
+#section-comprar_div-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#section-comprar_div-images img{
+    max-width: 128px;
+}
+
+#section-comprar_div-images > div > div{
+    position: absolute;
+    margin-top: -25px;
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #263b56;
+}
+
+
+/* 
+########## ESTILOS DA SECTION COMPRAR (06) ############################################################
+*/
+
+#section-08{
+    padding-top: var(--sections-gap);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#section-08__div-fale-conosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#icone-wpp{
+    width: 96px;
+}
+
+#section-08__div-perguntas-frequentes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+}
+
+#section-08__div-perguntas-frequentes > h2{
+    margin-bottom: 40px;
+}
+
+#section-08__div-perguntas-frequentes > div{
+    background-color: #0a4041;
+    border-radius: 25px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    filter: brightness(80%);
+    transition: filter var(--transition-time);
+}
+#section-08__div-perguntas-frequentes > div:hover{
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#section-08__div-perguntas-frequentes > div.active{
+    filter: brightness(100%);
+}
+
+#section-08__div-perguntas-frequentes > div > h3{
+    font-size: 1.25em;
+}
+
+#section-08__div-perguntas-frequentes > div > p{
+    display: none;
+}
+
+#section-08__div-perguntas-frequentes > div.active > p{
+    display: block;
+}
+
+
+/* 
+########## ESTILOS DA SECTION COMPRAR (06) ############################################################
+*/
+
+#section-09{
+    padding-top: var(--sections-gap);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+#section-09 > p{
+    max-width: 800px;
+    text-align: center;
 }
 
 
@@ -450,4 +545,11 @@ h3{
 
 
 
- 
+
+
+
+
+
+
+
+
