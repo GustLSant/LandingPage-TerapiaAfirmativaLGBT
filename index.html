@@ -18,7 +18,7 @@
             <p>Ser um terapeuta afirmativo <br> não é apenas ser LGBTQ+ <br> e não discriminar</p>
             <img src="images/eh-muito-mais-que-isso.png" alt="é muito mais que isso">
         </div>
-        <button class="button-01 shaded-text">Comprar Curso Agora</button>
+        <button class="button-01 clickable shaded-text" onclick="onClickComprarCurso()">Comprar Curso Agora</button>
         
     </section>
 
@@ -101,7 +101,7 @@
                 <p>Ma. Diana Soledade do Lago Camera (UFRJ)</p>
             </div>
             <div id="section-04__grid-item-mozer">
-                <img src="images/professores/MozerDeMiranda.png" alt="Me. Mozer de Miranda Ramos (UFS)">
+                <img src="images/professores/MozerDeMiranda.png" alt="Me. Mozer de Miranda Ramos (UFS)" class="clickable" onclick="redirectMozer()">
                 <div>
                     <p>Professor e Organizador</p>
                     <p>Me. Mozer de Miranda <br> Ramos (UFS)</p>
@@ -203,7 +203,7 @@
     </section>
 
     <section id="section-comprar" class="centralized-section">
-        <h2>Curso Online de Qualificação em Terapia Afirmativa <br> <span class="highlight-02">Compre agora!</span></h2>
+        <h2>Curso Online de Qualificação <br> em Terapia Afirmativa <br> <span class="highlight-02">Compre agora!</span></h2>
         <div class="div_cards_conteudo2">
             <div>
                 <p class="highlight-04">40</p>
@@ -220,7 +220,7 @@
             <p>R$<span class="highlight-03">428,00</span></p>
             <p>&nbsp&nbsp&nbsp&nbsp à vista <br> &nbsp&nbsp&nbsp&nbsp ou em até 12x</p>
         </div>
-        <button class="button-01 shaded-text">Comprar Curso agora</button>
+        <button class="button-01 clickable shaded-text">Comprar Curso agora</button>
         <div id="section-comprar_div-images">
             <img src="images/cartoes-jpg.jpg" alt="boleto, visa, mastercard, diners, elo, hipercard, jbc, american express, discover e aura aceitos">
             <div>
@@ -236,7 +236,7 @@
     <section id="section-08" class="centralized-section">
         <div id="section-08__div-fale-conosco">
             <h2>Fale Conosco</h2>
-            <img src="images/whatsapp-logo-svg.svg" alt="fale conosco pelo whatsapp" id="icone-wpp">
+            <img src="images/whatsapp-logo-svg.svg" alt="fale conosco pelo whatsapp" id="icone-wpp" class="clickable" onclick="redirecionarWpp()">
         </div>
         <div id="section-08__div-perguntas-frequentes">
             <h2>Perguntas Frequentes</h2>
@@ -270,7 +270,7 @@
             </div>
             <div class="pergunta-frequente" id="q07" onclick="toggleQuestion('q07')">
                 <h3>Tem vagas afirmativas?</h3>
-                <p>Sim, é um compromisso nosso. Repetidamente iremos disponibilizar seleções para estudantes de baixa renda, LGBTQ+, negras e indígenas e de microcidades. Indicamos que nos acompanhe no Instagram para ter acesso a essas informações (@_afirmativa).</p>
+                <p>Sim, é um compromisso nosso. Repetidamente iremos disponibilizar seleções para estudantes de baixa renda, LGBTQ+, negras e indígenas e de microcidades. Indicamos que nos acompanhe no Instagram para ter acesso a essas informações <a href="https://instagram.com/afirmativa" target="_blank" rel="nofollow">(@_afirmativa)</a>.</p>
             </div>
             <div class="pergunta-frequente" id="q08" onclick="toggleQuestion('q08')">
                 <h3>Afirmativa é uma abordagem?</h3>
@@ -280,7 +280,7 @@
     </section>
 
     <section id="section-09">
-        <img src="images/logo/logo-afirmativa-amarelo.png" alt="logo da afirmativa">
+        <a href="https://instagram.com/afirmativa" target="_blank" rel="nofollow" class="clickable"><img src="images/logo/logo-afirmativa-amarelo.png" alt="logo da afirmativa"></a> 
         <p>
             AFIRMATIVA SERVIÇOS ACADEMICOS E PUBLICAÇÕES LTDA | CNPJ 45.555.897/0001-58 | <br> Rua Jacinto Uchoa de Mendonça, 223 Bairro Grageru, Aracaju/SE - CEP 49.026-160 | 2023
         </p>
