@@ -7,9 +7,54 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo/logo-afirmativa-roxo.png" type="image/x-icon">
     <title>Terapia Afirmativa LGBTQ+</title>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11142041841"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11142041841');
+    </script>
+
+    <!-- Event snippet for Checkout - IC conversion page -->
+    <script>
+    gtag('event', 'conversion', {'send_to': 'AW-11142041841/6_guCNrjqJcYEPGh-MAp'});
+    </script>
+
+    <!-- Hotjar Tracking Code for Afirmativa -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3444292,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '6486944781367096');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=6486944781367096&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+
 </head>
 <body>
-    <section id="section-01" class="centralized-section">
+    <!-- CAPA -->
+    <section id="section-01">
         <img src="images/logo/logo-afirmativa-amarelo.png" alt="logo da afirmativa" id="section-01__logo-afirmativa">
         <h1 id="section-01__header">
             Para atender pessoas LGBTQ+ de modo <span class="highlight-01">ético</span> e <span class="highlight-01">eficaz</span> é necessário dominar a Terapia Afirmativa
@@ -22,14 +67,16 @@
         
     </section>
 
-    <section id="section-02" class="centralized-section">
+    <!-- O QUE É TERAPIA -->
+    <section id="section-02">
         <h2>O que é, afinal, uma <br> terapia afirmativa?</h2>
         <p>
             É uma postura clínica transteórica que busca superar o foco na homossexualidade e na transexualidade dos processos terapêuticos. O foco é na homotransfobia e nos seus efeitos, para tal são necessários diversos conhecimentos específicos sobre o grupo a ser atendido, sobre os efeitos da exposição aos estressores minoritários e sobre práticas interventivas adequadas e eficazes. Promove afirmação e integração identitária, tendo em vista a teoria do estresse minoritário.
         </p>
     </section>
 
-    <section id="section-03" class="centralized-section">
+    <!-- PILARES -->
+    <section id="section-03">
         <h2>Os Pilares da Terapia Afirmativa</h2>
         <div id="section-03__grid">
             <div>
@@ -59,7 +106,8 @@
         </div>
     </section>
 
-    <section id="section-04" class="centralized-section">
+    <!-- TIME DE PROFESSORES -->
+    <section id="section-04">
         <h2>Time de Profesores</h2>
         <div id="section-04__grid">
             <div class="section-04__grid-item">
@@ -110,11 +158,12 @@
         </div>
     </section>
 
-    <section id="section-05" class="centralized-section">
+    <!-- CONTEUDO -->
+    <section id="section-05">
         <h2>Conteúdo</h2>
         <div class="div_cards_conteudo2">
             <div>
-                <p class="highlight-04">40</p>
+                <p class="highlight-04">60</p>
                 <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp horas</p>
             </div>
             <div>
@@ -169,7 +218,8 @@
         </div>
     </section>
 
-    <section id="section-06" class="centralized-section">
+    <!-- RELATO -->
+    <section id="section-06">
         <h2>Depoimentos de nossos alunos</h2>
         <div id="section-06__grid-iframes">
             <iframe src="https://www.youtube.com/embed/RSrTi232EjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -202,11 +252,12 @@
         </div>
     </section>
 
-    <section id="section-comprar" class="centralized-section">
+    <!-- COMPRA -->
+    <section id="section-comprar">
         <h2>Curso Online de Qualificação <br> em Terapia Afirmativa <br> <span class="highlight-02">Compre agora!</span></h2>
         <div class="div_cards_conteudo2">
             <div>
-                <p class="highlight-04">40</p>
+                <p class="highlight-04">60</p>
                 <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp horas</p>
             </div>
             <div>
@@ -220,7 +271,7 @@
             <p>R$<span class="highlight-03">428,00</span></p>
             <p>&nbsp&nbsp&nbsp&nbsp à vista <br> &nbsp&nbsp&nbsp&nbsp ou em até 12x</p>
         </div>
-        <button class="button-01 clickable shaded-text">Comprar Curso agora</button>
+        <a class="button-01 clickable shaded-text" onclick="return gtag_report_conversion('https://pay.kiwify.com.br/yLl9GNJ');" class="" href="https://pay.kiwify.com.br/yLl9GNJ">Comprar Curso agora</a>
         <div id="section-comprar_div-images">
             <img src="images/cartoes-jpg.jpg" alt="boleto, visa, mastercard, diners, elo, hipercard, jbc, american express, discover e aura aceitos">
             <div>
@@ -233,7 +284,8 @@
         </div>
     </section>
 
-    <section id="section-08" class="centralized-section">
+    <!-- FALE CONOSCO / PERGUNTAS FREQUENTES -->
+    <section id="section-08">
         <div id="section-08__div-fale-conosco">
             <h2>Fale Conosco</h2>
             <img src="images/whatsapp-logo-svg.svg" alt="fale conosco pelo whatsapp" id="icone-wpp" class="clickable" onclick="redirecionarWpp()">
@@ -279,6 +331,7 @@
         </div>
     </section>
 
+    <!-- RODAPE -->
     <section id="section-09">
         <a href="https://instagram.com/afirmativa" target="_blank" rel="nofollow" class="clickable"><img src="images/logo/logo-afirmativa-amarelo.png" alt="logo da afirmativa"></a> 
         <p>

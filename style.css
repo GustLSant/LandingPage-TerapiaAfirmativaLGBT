@@ -50,9 +50,14 @@ a{
     font-size: 3.0em;
 }
 
-.centralized-section{
+section{
     max-width: var(--var-max-width);
     margin: auto;
+}
+@media (max-width: 1000px) {
+    section{
+        padding: 0px 20px;
+    }
 }
 
 .button-01{
@@ -115,7 +120,8 @@ h3{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     height: 100vh;
     max-height: calc(100vh - 60px);
 }
@@ -126,11 +132,6 @@ h3{
     top: 10px;
     right: 10px;
     z-index: 1;
-}
-@media (max-width: 1100px) {
-    #section-01__logo-afirmativa{
-        display: none;
-    }
 }
 
 #section-01__header{
@@ -162,6 +163,19 @@ h3{
     filter: drop-shadow(4px 4px 4px var(--shadow-color-02));
 }
 
+@media (max-width: 1100px) {
+    #section-01__logo-afirmativa{
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+    #section-01__div-subtitulo{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 
 /* 
 ########## ESTILOS DA SECTION 02 ############################################################
@@ -188,12 +202,10 @@ h3{
 
 
 /* 
-########## ESTILOS DA SECTION 03 ############################################################
+########## ESTILOS DA SECTION 03 (pilares) ############################################################
 */
 
 #section-03{
-    background: url(images/texturas/textura-fundo-02.png) no-repeat left center;
-    background-size: 30%;
     padding-top: var(--sections-gap);
     display: flex;
     flex-direction: column;
@@ -208,7 +220,7 @@ h3{
 }
 
 #section-03__grid > div{
-    background: url(images/texturas/textura-fundo-01.png) repeat center;
+    background: url(images/texturas/textura-fundo-01-seamless.png) repeat center;
     background-size: contain;
     display: flex;
     flex-direction: column;
@@ -228,9 +240,16 @@ h3{
 #section-03__grid > div:nth-child(3){background-color: var(--var-color-05);}
 #section-03__grid > div:nth-child(4){background-color: var(--var-color-04);}
 
+@media(max-width: 870px){
+    #section-03__grid{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
 
 /* 
-########## ESTILOS DA SECTION 04 ############################################################
+########## ESTILOS DA SECTION 04 (professores) ############################################################
 */
 
 #section-04{
@@ -299,9 +318,33 @@ h3{
     font-size: 1.25em;
 }
 
+@media(max-width: 1000px){
+    #section-04__grid{
+        grid-template-columns: minmax(250px, 300px) minmax(250px, 300px);
+    }
+
+    #section-04__grid-item-mozer{
+        grid-column-start: 1; 
+        grid-column-end: 3;
+        gap: 0px;
+    }
+}
+
+@media(max-width: 600px){
+    #section-04__grid{
+        grid-template-columns: minmax(250px, 300px);
+    }
+
+    #section-04__grid-item-mozer{
+        flex-direction: column;
+        grid-column-start: 1; 
+        grid-column-end: 2;
+    }
+}
+
 
 /* 
-########## ESTILOS DA SECTION 05 ############################################################
+########## ESTILOS DA SECTION 05 (conteudo) ############################################################
 */
 
 #section-05{
@@ -373,9 +416,17 @@ h3{
     font-weight: 600;
 }
 
+@media(max-width: 720px){
+    .div_cards_conteudo2{
+        display: flex;
+        justify-items: center;
+        gap: 15px;
+    }
+}
+
 
 /* 
-########## ESTILOS DA SECTION 06 ############################################################
+########## ESTILOS DA SECTION 06 (depoimento) ############################################################
 */
 
 #section-06{
@@ -383,6 +434,7 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 70px;
+    display: none;
 }
 
 #section-06__grid-iframes{
@@ -430,6 +482,7 @@ h3{
     background: url(images/ativo-agrupado-5-horizontal-jpg.jpg) repeat-x center top, url(images/ativo-agrupado-5-horizontal-jpg.jpg) repeat-x center bottom;
     background-size: 50%;
     padding: var(--sections-gap) 0px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -471,7 +524,7 @@ h3{
 */
 
 #section-08{
-    padding-top: var(--sections-gap);
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -538,7 +591,7 @@ h3{
 */
 
 #section-09{
-    padding-top: var(--sections-gap);
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
