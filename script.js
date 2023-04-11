@@ -9,7 +9,7 @@ function redirectMozer(){
 
 
 function redirecionarWpp(){
-    window.open('https://wa.me/557583687425', '_blank')
+    window.open('https://wa.me/5579991218675', '_blank')
 }
 
 
