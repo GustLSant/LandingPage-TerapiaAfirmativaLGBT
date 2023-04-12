@@ -284,7 +284,13 @@ h3{
 #section-04__grid{
     display: grid;
     grid-template-columns: minmax(100px, 0.33fr) minmax(100px, 0.33fr) minmax(100px, 0.33fr);
-    gap: 30px 30px;
+    grid-template-areas:
+        "prof prof prof"
+        "prof prof prof"
+        "prof prof prof"
+        "moze moze moze"
+    ;
+    gap: 30px;
 }
 
 .section-04__grid-item{
@@ -318,14 +324,15 @@ h3{
 }
 
 #section-04__grid-item-mozer{
+    grid-area: moze;
+    justify-self: center;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    grid-column-start: 1; 
-    grid-column-end: 4;
 }
 #section-04__grid-item-mozer > img{
-    max-width: 250px; /* 256px || 212px */
+    max-width: 250px;
     border-radius: 40px;
     border: 10px solid var(--var-color-02);
 }
@@ -346,41 +353,39 @@ h3{
     font-size: 1.25em;
 }
 
-/* @media(max-width: 1000px){
-    #section-04__grid{
-        grid-template-columns: minmax(250px, 300px) minmax(250px, 300px);
-    }
-
-    #section-04__grid-item-mozer{
-        grid-column-start: 1; 
-        grid-column-end: 3;
-        gap: 0px;
-    }
-
-    #section-04__grid-item-mozer > img{
-        max-width: 220px;
-    }
-}
-
-@media(max-width: 720px){
-    #section-04__grid{
-        grid-template-columns: minmax(150px, 200px) minmax(150px, 200px);
-        align-items: start;
-    }
-
-    #section-04__grid-item-mozer{
-        flex-direction: row;
-        grid-column-start: 1; 
-        grid-column-end: 3;
-        justify-self: start;
-        font-size: 0.8em;
-        gap: 10px;
-    }
-
+@media (max-width: 570px) {
     #section-04__grid-item-mozer > img{
         max-width: 200px;
     }
-} */
+}
+
+@media (max-width: 500px) {
+    #section-04__grid{
+        grid-template-columns: minmax(100px, 0.5fr) minmax(100px, 0.5fr);
+        grid-template-areas:
+            "prof prof"
+            "prof prof"
+            "prof prof"
+            "prof prof"
+            "prof prof"
+            "moze moze"
+        ;
+    }
+
+    #section-04__grid-item-mozer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    #section-04__grid-item-mozer > img{
+        max-width: 150px;
+    }
+
+    #section-04__grid-item-mozer > div{
+        font-size: 0.75em;
+    }
+}
 
 
 /* 
