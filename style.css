@@ -181,6 +181,7 @@ h3{
     #section-01__div-subtitulo{
         flex-direction: column;
         gap: 20px;
+        font-size: 1.2em;
     }
 }
 
@@ -193,7 +194,7 @@ h3{
 
 
 /* 
-########## ESTILOS DA SECTION 02 ############################################################
+########## ESTILOS DA SECTION 02 (o que é terapia) ############################################################
 */
 
 #section-02{
@@ -273,6 +274,7 @@ h3{
     background-position: top left, bottom left, top right, bottom right;
     background-size: 20%;
     margin-top: var(--sections-gap);
+    padding-top: 50px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -310,9 +312,13 @@ h3{
     gap: 20px;
     grid-column-start: 1; 
     grid-column-end: 4;
+    
+    
+    width: 80%;
+    justify-self: center;
 }
 #section-04__grid-item-mozer > img{
-    max-width: 212px; /* 256px || 212px */
+    max-width: 250px; /* 256px || 212px */
     border-radius: 40px;
     border: 10px solid var(--var-color-02);
 }
@@ -343,18 +349,29 @@ h3{
         grid-column-end: 3;
         gap: 0px;
     }
+
+    #section-04__grid-item-mozer > img{
+        max-width: 220px;
+    }
 }
 
-@media(max-width: 600px){
+@media(max-width: 720px){
     #section-04__grid{
-        grid-template-columns: minmax(250px, 300px);
+        grid-template-columns: minmax(150px, 200px) minmax(150px, 200px);
+        align-items: start;
     }
 
     #section-04__grid-item-mozer{
-        flex-direction: column;
+        flex-direction: row;
         grid-column-start: 1; 
-        grid-column-end: 2;
-        gap: 40px;
+        grid-column-end: 3;
+        justify-self: start;
+        font-size: 0.8em;
+        gap: 10px;
+    }
+
+    #section-04__grid-item-mozer > img{
+        max-width: 200px;
     }
 }
 
@@ -474,18 +491,25 @@ h3{
     display: flex;
     flex-direction: column;
     gap: 70px;
-    display: none;
 }
 
 #section-06__grid-iframes{
     display: grid;
-    grid-template-columns: 500px 500px;
-    justify-content: center;
+    grid-template-columns: minmax(300px, 0.5fr) minmax(300px, 0.5fr);
+    justify-items: center;
     gap: 50px;
 }
 #section-06__grid-iframes > iframe{
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 300px;
+}
+
+#section-06__grid-iframes > iframe:nth-child(odd){
+    justify-self: end;
+}
+#section-06__grid-iframes > iframe:nth-child(even){
+    justify-self: start;
 }
 
 #secton-06__container-relatos{
@@ -511,6 +535,19 @@ h3{
 
 #secton-06__container-relatos > div:nth-child(3) > p:nth-child(1){
     font-size: 0.75em;
+}
+
+@media (max-width: 720px) {
+    #section-06__grid-iframes{
+        grid-template-columns: minmax(100px, 1fr);
+    }
+
+    #section-06__grid-iframes > iframe:nth-child(odd){
+        justify-self: center;
+    }
+    #section-06__grid-iframes > iframe:nth-child(even){
+        justify-self: center;
+    }
 }
 
 
@@ -547,7 +584,7 @@ h3{
     max-width: 128px;
 }
 
-#section-comprar_div-images > div > div{
+#section-comprar__div-abpe > div{
     position: absolute;
     margin-top: -25px;
     display: flex;
@@ -563,9 +600,23 @@ h3{
         font-size: 1.5em;
     }
 
-    #section-comprar_div-images > div > div{
+    #section-comprar_div-images{
         flex-direction: column;
-        gap: 0px;
+    }
+
+    #section-comprar__div-abpe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-comprar__div-abpe > div{
+        position: relative;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -642,16 +693,28 @@ h3{
 */
 
 #section-09{
-    padding-top: 80px;
+    padding: 80px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-bottom: 30px;
+    text-align: center;
 }
+
+#section-09 > a > img{
+    max-width: 64px;
+}
+
 #section-09 > p{
     max-width: 800px;
-    text-align: center;
+}
+
+#section-09 > a:nth-child(3){
+    background-color: var(--var-color-02);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-decoration: underline;
 }
 
 @media (max-width: 720px) {
