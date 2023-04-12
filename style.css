@@ -232,7 +232,7 @@ h3{
 
 #section-03__grid{
     display: grid;
-    grid-template-columns: minmax(200px, 0.5fr) minmax(200px, 0.5fr);
+    grid-template-columns: minmax(200px, 0.4fr) minmax(200px, 0.4fr);
     justify-content: center;
     gap: 50px;
 }
@@ -624,6 +624,10 @@ h3{
 }
 
 @media (max-width: 720px){
+    #section-comprar{
+        padding: 90px 0px;
+    }
+    
     #section-comprar__div-preco{
         font-size: 1.5em;
     }
