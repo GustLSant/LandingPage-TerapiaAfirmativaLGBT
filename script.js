@@ -1,10 +1,15 @@
-function toggleQuestion(id){
-    document.getElementById(id).classList.toggle('active')
+if(document.getElementById('depoimento-peq-1').offsetHeight < "99"){
+    document.getElementById('dplm-1').style.opacity = "0%"
 }
 
 
 function redirectMozer(){
     window.open('https://www.instagram.com/mozerbeier/','_blank')
+}
+
+
+function toggleElement(id){
+    document.getElementById(id).classList.toggle('active')
 }
 
 

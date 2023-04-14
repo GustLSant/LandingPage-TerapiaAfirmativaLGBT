@@ -218,33 +218,46 @@
         </div>
     </section>
 
-    <!-- RELATO -->
+    <!-- DEPOIMENTO -->
     <section id="section-06">
         <h2>Depoimentos de nossos alunos</h2>
+        <!--
         <div id="section-06__grid-iframes">
             <iframe src="https://www.youtube.com/embed/RSrTi232EjM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe src="https://youtube.com/embed/p2BUO2pIFTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/n2fzh9N7JpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe src="https://www.youtube.com/embed/XsYBdkm_TgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <div id="secton-06__container-relatos">
-            <div>
-                <p class="italic">
+        -->
+        <div id="secton-06__container-depoimentos">
+            <div class="div-depoimento" id="d01" onclick="toggleElement('d01')">
+                <p class="italic p-depoimento">
                     “O acontecimento mais incrível que se deu na minha prática clínica foi o contato com a Terapia Afirmativa. Sou Psicóloga de LGBTI+ e atuo com foco nesse público desde o início da minha carreira, mas devido às estruturas sociais, e a forma que a Psicologia ainda é ensinada nas graduações, não tive o prazer e a honra de conhecer tal ciência ainda enquanto acadêmica. Na busca de qualificações e cursos na temática da Terapia Afirmativa, eu encontrei o curso organizado pelo Mozer. Meu, e que curso! Foi um verdadeiro divisor de águas na minha vida, como pessoa e profissional. Além de contar com profissionais extremamente capacitados para, é organizado de uma forma muito didática e coerente. O livro, também organizado pelo Mozer "Manual de Terapia Afirmativa", passou a ser meu mais novo livro favorito da vida enquanto Psi. Sinto que sou uma nova Psicóloga após o contato com tais conteúdos e profissionais, e recomendo demais para toda/o/e Psi que deseja se aperfeiçoar, independente da área, abordagem ou público. Afinal, a Terapia Afirmativa é uma postura transteórica, e pode/deve ser utilizada em todas as áreas de atuação de Psis, com qualquer abordagem escolhida, independente se o cliente/paciente/usuário seja LGBTI+, pertencente a outras minorias ou não. É um saber extremamente rico, humano, ético e válido. E deve ser compartilhado e semeado cada vez mais entre nós, não só na prática mas também na graduação.”
                 </p>
-                <p>Jussara Prado, Psicóloga</p>
+                <div>
+                    <p class="div-depoimento__ler-mais">Ler mais</p>
+                    <p>Jussara Prado, Psicóloga</p>
+                </div>
             </div>
-            <div>
-                <p class="italic">
+
+            <div class="div-depoimento" id="d02" onclick="toggleElement('d02')">
+                <p class="italic p-depoimento" id="depoimento-peq-1">
                     “O curso tem sido de grande valia para minha atualização pessoal e profissional. É ministrado por profissionais éticos e responsáveis pelo cuidado com o outro, com linguagem acessível e robusta. Recomendo que todos os profissionais da psicologia façam, uma vez que é nosso compromisso ético oferecer um atendimento clínico atualizado, humanizado e com vasta bagagem teórica/técnica. E recomendo adquirir o livro também, ele é uma ferramenta importante para ampliar nosso repertório.”
                 </p>
-                <p>Geysa Cristina Marcelino Nascimento, Mestra em Psicologia</p>
+                <div>
+                    <p class="div-depoimento__ler-mais" id="dplm-1">Ler mais</p>
+                    <p>Geysa Cristina Marcelino Nascimento, Mestra em Psicologia</p>
+                </div>
             </div>
-            <div>
-                <p class="italic">
+
+            <div class="div-depoimento" id="d03" onclick="toggleElement('d03')">
+                <p class="italic p-depoimento">
                     “O Curso de Qualificação em Terapia Afirmativa me foi muito útil, principalmente enquanto quase psicóloga. Sou mulher trans, ativista e pesquisadora sobre a atuação de pCIScólogos no manejo com pessoas transvestigêneres e vejo frequentemente a urgência de que haja uma formação voltada a nossa comunidade LGBTQIA+, o que não é feito por muitas das faculdades da área da saúde. É de suma importância que saibamos como lidar com as demandas da comunidade, sendo nós LGBTQIA+ ou não. No curso, pude ter um olhar mais crítico sobre minha atuação como psicóloga, como por exemplo perceber que não nos é ensinado, na disciplina de psicologia do desenvolvimento, um recorte da população trans, ou seja, a psicologia volta-se sempre a um CIStema. Enfim, com o curso de terapia afirmativa me sinto mais habilitada para acolher as demandas da nossa comunidade na clínica e saio com um olhar ainda mais crítico para as práticas psicológicas. Recomendo vivamente a todes que pretendem não só clinicar, mas também os que lidarão com sujeitos dotados de subjetividades e vivências distintas.”
                 </p>
-                <p>Alice de Biasi Picarone, Formanda em Psicologia</p>
+                <div>
+                    <p class="div-depoimento__ler-mais">Ler mais</p>
+                    <p>Alice de Biasi Picarone, Formanda em Psicologia</p>
+                </div>
             </div>
             
         </div>
@@ -292,39 +305,39 @@
         </div>
         <div id="section-08__div-perguntas-frequentes">
             <h2>Perguntas Frequentes</h2>
-            <div class="pergunta-frequente" id="q00" onclick="toggleQuestion('q00')">
+            <div class="pergunta-frequente" id="q00" onclick="toggleElement('q00')">
                 <h3>Posso parcelar o curso?</h3>
                 <p>Sim! O curso pode ser parcelado em até 12x. Se tiver alguma dificuldade, fale conosco!</p>
             </div>
-            <div class="pergunta-frequente" id="q01" onclick="toggleQuestion('q01')">
+            <div class="pergunta-frequente" id="q01" onclick="toggleElement('q01')">
                 <h3>Quais as formas de pagamento?</h3>
                 <p>Você pode pagar via PIX, boleto ou cartão de crédito.</p>
             </div>
-            <div class="pergunta-frequente" id="q02" onclick="toggleQuestion('q02')">
+            <div class="pergunta-frequente" id="q02" onclick="toggleElement('q02')">
                 <h3>Em qual horário ocorrem as aulas?</h3>
                 <p>As aulas são assíncronas. Ou seja, elas ficarão gravadas e disponíveis na plataforma para que você possa assistir de acordo com sua disponibilidade.</p>
             </div>
-            <div class="pergunta-frequente" id="q03" onclick="toggleQuestion('q03')">
+            <div class="pergunta-frequente" id="q03" onclick="toggleElement('q03')">
                 <h3>As aulas ficarão disponíveis por quanto tempo?</h3>
                 <p>O curso ficará disponível por 1 ano!</p>
             </div>
-            <div class="pergunta-frequente" id="q04" onclick="toggleQuestion('q04')">
+            <div class="pergunta-frequente" id="q04" onclick="toggleElement('q04')">
                 <h3>Sou estudante, posso fazer o curso?</h3>
                 <p>Com certeza! Nunca é cedo para se aproximar. O curso é indicado para estudantes e profissionais de Psicologia</p>
             </div>
-            <div class="pergunta-frequente" id="q05" onclick="toggleQuestion('q05')">
+            <div class="pergunta-frequente" id="q05" onclick="toggleElement('q05')">
                 <h3>Qual o valor total do curso?</h3>
                 <p>À vista, o curso custa apenas R$ 429,00.</p>
             </div>
-            <div class="pergunta-frequente" id="q06" onclick="toggleQuestion('q06')">
+            <div class="pergunta-frequente" id="q06" onclick="toggleElement('q06')">
                 <h3>Este valor de R$429,00 é mensalidade?</h3>
                 <p>Não, por este valor você já recebe acesso ao curso por 1 ano.</p>
             </div>
-            <div class="pergunta-frequente" id="q07" onclick="toggleQuestion('q07')">
+            <div class="pergunta-frequente" id="q07" onclick="toggleElement('q07')">
                 <h3>Tem vagas afirmativas?</h3>
                 <p>Sim, é um compromisso nosso. Repetidamente iremos disponibilizar seleções para estudantes de baixa renda, LGBTQ+, negras e indígenas e de microcidades. Indicamos que nos acompanhe no Instagram para ter acesso a essas informações <a href="https://instagram.com/_afirmativa?igshid=YmMyMTA2M2Y=" target="_blank" rel="nofollow">(@_afirmativa)</a>.</p>
             </div>
-            <div class="pergunta-frequente" id="q08" onclick="toggleQuestion('q08')">
+            <div class="pergunta-frequente" id="q08" onclick="toggleElement('q08')">
                 <h3>Afirmativa é uma abordagem?</h3>
                 <p>Não. É uma postura clínica transteórica que busca superar o foco na homossexualidade e na transexualidade dos processos terapêuticos.</p>
             </div>
